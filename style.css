@@ -1,0 +1,561 @@
+/*
+    DEMO STYLE
+*/
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+
+}
+
+/* html {
+    font-size: 62.5%;
+} */
+
+body {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    background: #0a192f;
+    color: #cacaca;
+    /* line-height: 1.7px; */
+    position: relative;
+
+}
+
+#email1 {
+    position: fixed;
+    top: 30%;
+    right: -8%;
+}
+
+.container {
+    max-width: 98rem;
+}
+
+.rotate {
+
+    transform: rotate(90deg);
+    float: right;
+    margin-top: 10rem;
+    margin-right: 1rem;
+    font-size: 1rem;
+    color: rgb(121, 141, 143);
+    /* Legacy vendor prefixes that you probably don't need... */
+
+    /* Safari */
+    -webkit-transform: rotate(+90deg);
+
+    /* Firefox */
+    -moz-transform: rotate(-90deg);
+
+    /* IE */
+    -ms-transform: rotate(-90deg);
+
+    /* Opera */
+    -o-transform: rotate(-90deg);
+
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
+
+components #line {
+    font-size: .5rem;
+
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: rgb(182, 180, 180);
+}
+
+#p {
+    color: rgb(67, 223, 235);
+}
+
+#h {
+    font-size: 4em;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+h1 {
+    font-family: 'Courier', sans-serif;
+}
+
+#hh {
+    font-family: 'Courier', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    perspective: 1500px;
+}
+
+
+#sidebar {
+    font-family: 'Poppins', sans-serif;
+    min-width: 200px;
+    max-width: 200px;
+    background: #0a192f;
+    box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -10px;
+    color: #fff;
+    transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
+    transform-origin: bottom left;
+}
+
+#sidebar.active {
+    margin-left:-220px;
+    transform: rotateY(100deg);
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #0a192f;
+}
+
+#sidebar ul.components {
+    margin-top: 2rem;
+    text-align: center !important;
+    padding: 10px 0;
+    border-bottom: 1px solid #2ce9df;
+}
+
+#sidebar ul {
+    color: #fff;
+    margin: auto;
+    text-align: center !important;
+}
+
+#sidebar ul li a {
+    /* margin-left: 2rem; */
+    padding: 30px;
+    font-size: 1.1em;
+    display: block;
+    text-emphasis: none;
+}
+
+#sidebar ul li a:hover {
+    margin: auto;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to right, rgb(100, 255, 218), transparent);
+    /* border-bottom: 1px solid rgb(0, 247, 255); */
+
+
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #6d7fcc;
+}
+
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6d7fcc;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+
+.resume {
+    color: rgb(100, 255, 218);
+    background-color: transparent;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    line-height: 1;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 13px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(100, 255, 218);
+    border-image: initial;
+    border-radius: 3px;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+
+}
+
+
+a.article,
+a.article:hover {
+    background: #6d7fcc !important;
+    color: #fff !important;
+}
+
+
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+
+
+}
+
+#navigation {
+
+    height: 7rem;
+    background: #0a192f;
+    box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -10px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #ccd6f6;
+
+}
+
+.nav-logo {
+    padding-top: 1.7rem;
+    float: left;
+    padding-left: 3rem;
+    cursor: pointer;
+
+
+}
+
+#sidebarCollapse {
+    width: 40px;
+    height: 40px;
+    background: #0a192f;
+
+    cursor: pointer;
+}
+
+#sidebarCollapse span {
+    width: 80%;
+    height: 2px;
+    margin: 0 auto;
+    display: block;
+    background: rgb(54, 201, 193);
+    transition: all 0.8s cubic-bezier(0.810, -0.330, 0.345, 1.375);
+    transition-delay: 0.2s;
+}
+
+#sidebarCollapse span:first-of-type {
+    transform: rotate(45deg) translate(2px, 2px);
+}
+
+#sidebarCollapse span:nth-of-type(2) {
+    opacity: 0;
+}
+
+#sidebarCollapse span:last-of-type {
+    transform: rotate(-45deg) translate(1px, -1px);
+}
+
+
+#sidebarCollapse.active span {
+    transform: none;
+    opacity: 1;
+    margin: 5px auto;
+}
+
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+@media only screen and (max-width: 550px) {
+    .card-body {
+width: 300px;
+/* height: 30px; */
+}
+
+
+
+.card-body .card-body-content{
+    width: 100%;
+    /* height: 100%; */
+    font-size: 13px;
+}
+    #sidebar {
+        margin-left: -220px;
+        width: 20px;
+        transform: rotateY(60deg);
+    }
+
+    #sidebar.active {
+        margin-left: 0;
+        transform: none;
+    }
+
+    #sidebarCollapse span:first-of-type,
+    #sidebarCollapse span:nth-of-type(2),
+    #sidebarCollapse span:last-of-type {
+        transform: none;
+        opacity: 1;
+        margin: 5px auto;
+    }
+
+    #sidebarCollapse.active span {
+        margin: 0 auto;
+    }
+
+    #sidebarCollapse.active span:first-of-type {
+        transform: rotate(45deg) translate(2px, 2px);
+    }
+
+    #sidebarCollapse.active span:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    #sidebarCollapse.active span:last-of-type {
+        transform: rotate(-45deg) translate(1px, -1px);
+    }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+    #hide {
+        opacity: 0;
+    }
+
+    #about {
+        margin-top: 1rem;
+    }
+
+    .backside {
+        position: absolute;
+        width: 60px;
+    }
+
+
+}
+
+/* @media only screen and (max-width: 860px) {
+    #hide {
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #hide {
+        opacity: 0;
+    } 
+}*/
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/*   skills
+/*-----------------------------------------------------------------------------------*/
+#span {
+    color: rgb(0, 247, 255);
+}
+
+.font-fam {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+
+}
+
+.list-unstyled:first-child {
+    margin-right: 20px;
+}
+
+#skill-col {
+    width: 95%;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*   projects
+/*-----------------------------------------------------------------------------------*/
+#projects {
+    width: 93%;
+    margin: 0 auto;
+}
+
+.projects-sub {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 25px;
+}
+
+.card {
+    background: #172A45;
+    height: 300px;
+    transition: all 0.2s;
+    margin: 0 25px 25px 0;
+
+}
+
+
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-logo {
+    font-size: 40px;
+    color: rgb(0, 247, 255);
+    padding: 10px;
+}
+
+.card-links {
+    margin-top: 25px;
+}
+
+.web-links {
+    font-size: 20px;
+    color: rgb(0, 247, 255);
+    padding: 7px;
+
+}
+
+.card-body-header {
+    text-transform: capitalize;
+
+}
+
+.card-body-content {
+    font-size: 15px;
+
+
+}
+
+.project-stack ul {
+    /* justify-content: flex-start; */
+    font-family: 'Poppins', sans-serif;
+    color: #8892B0;
+
+}
+
+.project-stack ul li {
+        display: inline;
+
+    list-style: none;
+    font-size: 12px;
+
+
+}
+
+.project-stack ul li:not(:last-child) {
+
+    padding-right: 10px;
+}
+
+
+
+
+/* contact */
+.formc {
+    background: #0a192f;
+
+}
+
+.form-btn {
+    text-align: center;
+    margin-top: 40px;
+    transition: all 0.2s
+}
+
+.btn:hover {
+
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to right, rgb(100, 255, 218), transparent);
+}
+
+.contact-sub {
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+
+/* footer */
+.footer {
+    height: 60px;
+    background: #0a192f;
+    box-shadow: rgba(2, 12, 27, 0.7) 0 -10px 15px -10px;
+    margin-top: 60px;
+
+
+}
+
+.footer p {
+    padding-top: 20px;
+    transition: all 0.2s;
+}
+
+.footer p:hover {
+    color: rgb(0, 247, 255);
+}
+
+
+
+/* end of footer */
