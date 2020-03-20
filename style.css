@@ -147,7 +147,7 @@ h1 {
 }
 
 #sidebar.active {
-    margin-left:-220px;
+    margin-left: -220px;
     transform: rotateY(100deg);
 }
 
@@ -328,17 +328,18 @@ a.article:hover {
 ----------------------------------------------------- */
 @media only screen and (max-width: 550px) {
     .card-body {
-width: 300px;
-/* height: 30px; */
-}
+        width: 300px;
+        /* height: 30px; */
+    }
 
 
 
-.card-body .card-body-content{
-    width: 100%;
-    /* height: 100%; */
-    font-size: 13px;
-}
+    .card-body .card-body-content {
+        width: 100%;
+        /* height: 100%; */
+        font-size: 13px;
+    }
+
     #sidebar {
         margin-left: -220px;
         width: 20px;
@@ -497,7 +498,7 @@ width: 300px;
 }
 
 .project-stack ul li {
-        display: inline;
+    display: inline;
 
     list-style: none;
     font-size: 12px;
@@ -516,6 +517,12 @@ width: 300px;
 /* contact */
 .formc {
     background: #0a192f;
+
+}
+
+.formc:focus {
+    background: none;
+    border: 0.5px solid #2ce9df;
 
 }
 
