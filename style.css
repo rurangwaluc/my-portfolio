@@ -244,6 +244,12 @@ ul.CTAs a {
 
 }
 
+.resume:hover {
+    background: #21ebff;
+    color: #111;
+    box-shadow: 0 0 50px #21ebff;
+    transition-delay: 0.2s;
+}
 
 a.article,
 a.article:hover {
@@ -466,6 +472,13 @@ a.article:hover {
     font-size: 40px;
     color: rgb(0, 247, 255);
     padding: 10px;
+    margin: 0 4px;
+}
+
+.card-logo i:hover {
+
+    transform: translateY(-1px);
+
 }
 
 .card-links {
@@ -481,7 +494,12 @@ a.article:hover {
 
 .card-body-header {
     text-transform: capitalize;
+    font-weight: 700;
 
+}
+
+.card-body-header:hover {
+    transform: translateY(-1px);
 }
 
 .card-body-content {
