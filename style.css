@@ -389,6 +389,12 @@ a.article:hover {
         opacity: 0;
     }
 
+    #experience h5 {
+        font-size: 9px;
+        /* font-style: oblique;
+        font-weight: 700; */
+    }
+
     #about {
         margin-top: 1rem;
     }
