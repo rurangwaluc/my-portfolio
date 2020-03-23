@@ -413,7 +413,20 @@ a.article:hover {
     } 
 }*/
 
+#experience h5 {
+    font-size: 18px;
+    font-style: oblique;
+    font-weight: 700;
+}
 
+#experience small {
+    color: #21ebff;
+    font-style: italic;
+}
+
+#experience p {
+    font-size: 16px;
+}
 
 /*-----------------------------------------------------------------------------------*/
 /*   skills
