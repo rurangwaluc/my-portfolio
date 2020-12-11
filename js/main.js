@@ -79,7 +79,7 @@ $(document).ready(function () {
 
   $(function () {
     typed.typed({
-      strings: ["Frontend Web Developer", "React Developer", "Frontend Software Engineer"],
+      strings: ["Full-Stack Web Developer.", "Frontend Web Developer.", "React Developer.", "Wordpress Developer."],
       typeSpeed: 100,
       loop: true,
     });
